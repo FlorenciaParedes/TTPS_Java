@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>BlogDeMensajes</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+<resource-ref>
+    <!-- Configura una referencia a un recurso -->
+    <res-ref-name>jdbc/practica4</res-ref-name> <!-- Define el nombre de la referencia -->
+    <res-type>javax.sql.DataSource</res-type> <!-- Especifica el tipo del recurso -->
+    <res-auth>Container</res-auth> <!-- Indica el tipo de autenticación |Tomcat se encargará de manejar la autenticación y las credenciales -->
+</resource-ref>
+</web-app>

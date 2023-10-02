@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context debug="5" reloadable="true" crossContext="true">
+ <Resource 
+ name="jdbc/practica4"  
+ auth="Container" 
+ type="javax.sql.DataSource"
+ maxActive="100" 
+ maxIdle="30" 
+ maxWait="10000"
+ username="root" 
+ password="root"
+ driverClassName="com.mysql.jdbc.Driver"
+ url="jdbc:mysql://localhost:3306/practica4?autoReconnect=true"/>
+</Context>
+<!-- El recurso se llama "jdbc/MySQLDS" 
+Este nombre con el que se registra, es el nombre que se utiliza para recuperar el contexto
+Se autentica a través del contenedor. 
+Es de tipo DataSource 
+Permite un máximo de 100 conexiones activas,
+30 conexiones inactivas 
+Un tiempo máximo de espera de 10 segundos. -->
+    
+<!-- Se proporcionan las credenciales de la base de datos: nombre de usuario "root" y contraseña "root". -->
+   
+<!-- Se especifica la clase del controlador JDBC para MySQL 
+y la URL de la base de datos. 
+La URL indica que se conectará a MySQL en localhost en el puerto 3306, 
+utilizando la base de datos "practica4"
+ y permitiendo la reconexión automática en caso de desconexión. -->

@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+   <h1>Agregar Mensaje</h1>
+    <form action="GuardarMensaje" method="post">
+        <label for="nombre">Nombre de quien lo hace:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        
+        <label for="mensaje">Texto del mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+        
+        <input type="submit" value="Guardar Mensaje">
+    </form>
+</body>
+</html>
